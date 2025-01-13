@@ -1,0 +1,13 @@
+x = 3
+PRINT x
+IF x > 5 THEN
+    PRINT x + 10
+ELSEIF x >= 3 THEN
+    PRINT "Btwn 3 and 5"
+ENDIF
+a = 1
+WHILE a < 10 DO
+    PRINT a
+    a = a + 1
+ENDWHILE
+PRINT "well, this should work anyway"
