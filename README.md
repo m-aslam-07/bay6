@@ -1,20 +1,28 @@
-# Bay6
+# Runner – Docker Setup Guide
 
-This repo is my attempt at a BASIC-like interpreter written in Haskell.
-Refer `bay6/` for sample code.
+This repository contains the **Runner service** for the
+**Evolutionary Algorithms On Click** platform.
 
-## Current Features:
+The runner depends on several backend services (database, message queue,
+object storage, auth, etc.) that are defined in the
+`Evolutionary-Algorithms-On-Click/operations` repository.
 
-1. Variable assignment
-2. If statements
-3. While loops
-4. TURING COMPLETE!
+This guide explains, step by step, how to run the full system using Docker,
+while replacing the default runner with the updated version from this repository.
 
-## TODO:
+---
 
-Feel free to create issues for ideas, I'm open to extending this language to do
-whatever
+## Prerequisites
 
-1. subroutines, `GOTO`, `GOSUB`, `RETURN`
-2. arrays
-3. transpile to C?
+Make sure the following are installed on your system:
+
+- Docker
+- Docker Compose
+- Git
+
+Verify installation:
+
+```bash
+docker --version
+docker compose version
+git --version
